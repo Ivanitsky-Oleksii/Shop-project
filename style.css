@@ -3,7 +3,7 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url(/lesson-9/images/patt.png) ;
+    background-image: url(images/patt.png) ;
 }
 .container{
     width: 1200px;
