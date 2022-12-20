@@ -367,11 +367,13 @@ main {
   color: white;
   font-size: 40px;
   margin-left: 85px;
+  margin-top: 0px;
 }
 .price_1_1 {
   color: white;
   font-size: 40px;
-  margin-left: 70px;
+  margin-left: 65px;
+  margin-top: 0px;
 }
 .price_2 {
   color: white;
@@ -384,7 +386,7 @@ main {
   color: white;
   font-size: 20px;
   display: block;
-  margin-left: 115px;
+  margin-left: 118px;
   margin-top: -40px;
 }
 .details {
@@ -394,10 +396,16 @@ main {
   color: white;
   background-color: #2c71b8;
 }
+.details:hover {
+  background-color: rgba(255, 255, 255, 75%);
+}
 .cart_b-n {
   width: 212px;
   height: 50px;
   margin-left: 30px;
+  background-color: #2c71b8;
+}
+.cart_b-n:hover {
   background-color: rgba(255, 255, 255, 75%);
 }
 .details-btn-text {
