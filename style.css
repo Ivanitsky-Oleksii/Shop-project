@@ -232,6 +232,7 @@ main {
   border: 1px solid white;
   width: 270px;
   height: 845px;
+  background-color: rgba(255, 255, 255, 55%);
 }
 .aside-1 {
   border: 1px solid white;
@@ -395,6 +396,7 @@ main {
   margin-left: 30px;
   color: white;
   background-color: #2c71b8;
+  border: 1px solid white;
 }
 .details:hover {
   background-color: rgba(255, 255, 255, 75%);
@@ -404,6 +406,7 @@ main {
   height: 50px;
   margin-left: 30px;
   background-color: #2c71b8;
+  border: 1px solid white;
 }
 .cart_b-n:hover {
   background-color: rgba(255, 255, 255, 75%);
@@ -412,7 +415,133 @@ main {
   color: white;
   display: block;
   font-size: 20px;
-  margin: 6px 25px 6px 6px;
+  margin: 6px 23px 6px 6px;
+}
+.details-btn-text-sub {
+  color: white;
+  display: block;
+  font-size: 20px;
+  margin: 6px 55px 6px 6px;
+}
+.aside-text {
+  color: white;
+  font-size: 20px;
+  margin: 27px 0px 26px 35px;
+}
+.label-check-1{
+  margin: 20px 0px 0px 50px;
+  color: white;
+  text-align:left;
+  display: block;
+  position: relative;
+}
+.label-check-2{
+  margin: 20px 0px 0px 50px;
+  color: white;
+  text-align:left;
+  display: block;
+  position: relative;
+}
+.label-check-3{
+  margin: 20px 0px 0px 50px;
+  color: white;
+  text-align:left;
+  display: block;
+  position: relative;
+}
+.label-check-4{
+  margin: 20px 0px 0px 50px;
+  color: white;
+  text-align:left;
+  display: block;
+  position: relative;
+}
+.label-check-5{
+  margin: 20px 0px 0px 50px;
+  color: white;
+  text-align:left;
+  display: block;
+  position: relative;
+}
+.label-check-6{
+  margin: 20px 0px 0px 50px;
+  color: white;
+  text-align:left;
+  display: block;
+  position: relative;
+}
+.label-check-7{
+  margin: 20px 0px 0px 50px;
+  color: white;
+  text-align:left;
+  display: block;
+  position: relative;
+}
+.label-check-8{
+  margin: 20px 0px 0px 50px;
+  color: white;
+  text-align:left;
+  display: block;
+  position: relative;
+}
+.label-check-9{
+  margin: 20px 0px 0px 50px;
+  color: white;
+  text-align:left;
+  display: block;
+  position: relative;
+}
+.label-check-10{
+  margin: 20px 0px 0px 50px;
+  color: white;
+  text-align:left;
+  display: block;
+  position: relative;
+}
+.label-check-11{
+  margin: 20px 0px 0px 50px;
+  color: white;
+  text-align:left;
+  display: block;
+  position: relative;
+}
+.label-check-12{
+  margin: 20px 0px 0px 50px;
+  color: white;
+  text-align:left;
+  display: block;
+  position: relative;
+}
+.aside-text-1{
+  display: block;
+  margin:50px 0px 0px 30px;
+  color: white;
+}
+.aside-text-2{
+  display: block;
+  margin:70px 0px 0px 30px;
+  color: white;
+}
+.aside-text-3{
+  display: block;
+  margin:85px 0px 0px 30px;
+  color: white;
+}
+input[type="checkbox"]{
+  display: none;
+}
+input[type="checkbox"]:checked + label::before {
+  background-color: white;
+}
+label::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid white;
+  cursor: pointer;
+  margin: 1px 0px 0px -20px;
 }
 .cart_by {
   width: 15px;
