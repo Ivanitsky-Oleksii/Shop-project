@@ -686,8 +686,9 @@ label::before {
 }
 
 .slider-container{
-  font-size: 150px;
+  font-size: 100px;
   text-align: center;
   color: white;
-  padding: 120px;
+  top: 30px;
+  padding:120px;
 }

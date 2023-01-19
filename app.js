@@ -60,6 +60,6 @@ document.querySelector(".send").addEventListener("click", function (e){
 
 $(".slider-container").slick({
   autoplay: true,
-  autoplaySpeed: 1500,
+  autoplaySpeed: 2500,
   dots: true,
 });
