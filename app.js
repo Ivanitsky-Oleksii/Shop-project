@@ -46,3 +46,20 @@ function closeModal() {
   modal.classList.add("hide");
   modal.classList.remove("show");
   };
+
+modal.addEventListener("click", function(e){
+  if(e.target===modal)
+  {
+    closeModal();
+  }
+});
+
+document.querySelector(".send").addEventListener("click", function (e){
+  e.preventDefault();
+});
+
+$(".slider-container").slick({
+  autoplay: true,
+  autoplaySpeed: 1500,
+  dots: true,
+});

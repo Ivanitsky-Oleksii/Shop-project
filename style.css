@@ -684,3 +684,10 @@ label::before {
 .hide{
   display: none;
 }
+
+.slider-container{
+  font-size: 150px;
+  text-align: center;
+  color: white;
+  padding: 120px;
+}
