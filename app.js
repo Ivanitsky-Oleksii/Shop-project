@@ -63,3 +63,91 @@ $(".slider-container").slick({
   autoplaySpeed: 2500,
   dots: true,
 });
+
+// function showModalByScroll(){
+//   if(window.scrollY >= document.body.scrollHeight / 2) {
+//     openModal();
+//     window.removeEventListener("scroll", showModalByScroll);
+//   }
+// }
+// window.addEventListener("scroll", showModalByScroll);
+
+// setTimeout(openModal, 5000);
+// setInterval(openModal, 5000);
+
+
+
+
+// class Car {
+//   constructor(model, color, year) {
+//     this.model = model;
+//     this.year = year;
+//     this.color = color;
+//   }
+//     hi = function(){
+//       console.log("Hi" + this.model);
+//     };
+//     hello = function(){
+//       console.log("hello " + this.model + " " + this.color);
+//     };
+//   }
+
+
+// let audi = new Car("a4","black",2008);
+// let lexus = new Car("es350","white",2008);
+// let bmw = new Car("328","grey",2020);
+
+// console.log(audi);
+// console.log(lexus);
+// console.log(bmw);
+
+// audi.hello();
+// lexus.hello();
+// bmw.hello();
+
+
+let inrementBtns = document.querySelectorAll(".pr-qtt-increment")[0];
+let derementBtns = document.querySelectorAll(".pr-qtt-decrement")[0];
+let productsCount = document.querySelectorAll(".product-quantity input")[0];
+
+console.log(inrementBtns);
+console.log(derementBtns);
+console.log(productsCount);
+
+
+
+function Counter(inrementBtns,derementBtns,inputField) {
+  this.domRefs = {
+    inrementBtns,
+    derementBtns,
+    inputField,
+  };
+this.toggleButtonState = function(){
+  let count = +this.domRefs.inputField.value;
+  this.domRefs.derementBtns.disabled = count <= 1;
+  this.domRefs.inrementBtns.disabled = count >= 10;
+};
+this.toggleButtonState();
+
+
+this.increment = function(){
+  this.domRefs.inputField.value = +this.domRefs.inputField.value + 1;
+  this.toggleButtonState()
+};
+
+this.decrement = function(){
+  this.domRefs.inputField.value = +this.domRefs.inputField.value - 1;
+  this.toggleButtonState()
+};
+
+this.domRefs.inrementBtns.addEventListener("click", 
+this.increment.bind(this)
+);
+
+this.domRefs.derementBtns.addEventListener("click", 
+this.decrement.bind(this)
+);
+
+}
+const counter1 = new Counter(inrementBtns,derementBtns,productsCount);
+console.log(counter1);
