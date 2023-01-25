@@ -106,9 +106,12 @@ $(".slider-container").slick({
 // bmw.hello();
 
 
-let inrementBtns = document.querySelectorAll(".pr-qtt-increment")[0];
-let derementBtns = document.querySelectorAll(".pr-qtt-decrement")[0];
-let productsCount = document.querySelectorAll(".product-quantity input")[0];
+
+
+let inrementBtns = document.querySelectorAll(".pr-qtt-increment");
+let derementBtns = document.querySelectorAll(".pr-qtt-decrement");
+let productsCount = document.querySelectorAll(".product-quantity .pr-qtt");
+
 
 console.log(inrementBtns);
 console.log(derementBtns);
@@ -147,7 +150,19 @@ this.increment.bind(this)
 this.domRefs.derementBtns.addEventListener("click", 
 this.decrement.bind(this)
 );
+};
 
-}
-const counter1 = new Counter(inrementBtns,derementBtns,productsCount);
-console.log(counter1);
+let counters = [];
+productsCount.forEach(
+  (item,i) =>
+(counters[i]= new Counter(inrementBtns[i],derementBtns[i],item)));
+
+
+
+
+
+
+
+
+// const counter1 = new Counter(inrementBtns,derementBtns,productsCount);
+// console.log(counter1);
