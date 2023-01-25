@@ -64,13 +64,13 @@ $(".slider-container").slick({
   dots: true,
 });
 
-// function showModalByScroll(){
-//   if(window.scrollY >= document.body.scrollHeight / 2) {
-//     openModal();
-//     window.removeEventListener("scroll", showModalByScroll);
-//   }
-// }
-// window.addEventListener("scroll", showModalByScroll);
+function showModalByScroll(){
+  if(window.scrollY >= document.body.scrollHeight / 2) {
+    openModal();
+    window.removeEventListener("scroll", showModalByScroll);
+  }
+}
+window.addEventListener("scroll", showModalByScroll);
 
 // setTimeout(openModal, 5000);
 // setInterval(openModal, 5000);
