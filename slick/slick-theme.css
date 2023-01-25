@@ -3,6 +3,7 @@
 .slick-loading .slick-list
 {
     background: #fff url('./ajax-loader.gif') center center no-repeat;
+    width: 100%;
 }
 
 /* Icons */
@@ -11,6 +12,8 @@
     font-family: 'slick';
     font-weight: normal;
     font-style: normal;
+    display: flex;
+    justify-content: center;
 
     src: url('./fonts/slick.eot');
     src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
@@ -29,7 +32,7 @@
 
     width: 20px;
     height: 20px;
-    padding: 0;
+    padding: 0px;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -79,7 +82,7 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: -155px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -88,16 +91,16 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: '◀';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: '▶';
 }
 
 .slick-next
 {
-    right: -25px;
+    right: -155px;
 }
 [dir='rtl'] .slick-next
 {
@@ -106,11 +109,11 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: '▶';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    content: '◀';
 }
 
 /* Dots */
@@ -178,8 +181,8 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 10px;
 
     position: absolute;
     top: 0;
@@ -188,10 +191,10 @@
     width: 20px;
     height: 20px;
 
-    content: '•';
+    content: '◼';
     text-align: center;
 
-    opacity: .25;
+    opacity: .15;
     color: black;
 
     -webkit-font-smoothing: antialiased;
@@ -200,5 +203,5 @@
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: black;
+    color: white;
 }

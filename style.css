@@ -686,11 +686,11 @@ label::before {
 }
 
 .slider-container{
-  font-size: 100px;
   text-align: center;
   color: white;
-  top: 30px;
-  padding:120px;
+  top: 5px;
+  padding:0px;
+  width: 100%;
 }
 .product-quantity{
   text-align: center;
@@ -729,20 +729,4 @@ label::before {
   position: absolute;
   width: 30px;
   height: 30px;
-}
-.product-quantity-2{
-  text-align: center;
-  margin-bottom: 5px;
-  display: flex;
-  position: relative;
-  bottom: 33px;
-  left: 25px;
-}
-.product-quantity-3{
-  text-align: center;
-  margin-bottom: 5px;
-  display: flex;
-  position: relative;
-  bottom: 33px;
-  left: 25px;
 }
